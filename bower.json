@@ -1,6 +1,7 @@
 {
-    "name": "smmpic",
-    "dependencies": {
-        "jquery": "~2.1.0"
-    }
+  "name": "smmpic",
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "html2canvas": "~0.4.1"
+  }
 }

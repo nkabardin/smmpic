@@ -5,7 +5,7 @@
   font-family: 'Tinos', serif
 
 body
-  background: black
+  background: white
   background-image: image-url("images/background.jpg")
 
 #sidebar
@@ -21,7 +21,7 @@ body
     right: 0
     bottom: 0
     background: white
-    opacity: 0.4
+    opacity: 0.6
   .inner
     position: absolute
     top: 0
@@ -29,6 +29,14 @@ body
     right: 0
     bottom: 0
     +techfont
+
+    .credits
+      position: absolute
+      height: 50px
+      text-align: center
+      width: 260px
+      bottom: 0
+      left: 0
 
   h1
     font-size: 20px
@@ -50,53 +58,63 @@ body
     display: none
 
 #main
-  width: 100%
   height: 100%
+  margin-left: 260px
   position: relative
 
   .pic-container
+    user-select: none
     width: 890px
     height: 690px
-    margin: 30px 30px 30px 290px
+    margin: 30px 30px 5px 30px
     border: 3px solid black
     position: relative
     +mainfont
     overflow: hidden
-
-    .bkg
+    .inner
       position: absolute
       top: 0
-      left: 0
       right: 0
       bottom: 0
-      background: white
-      opacity: 0.95
-
-    .image-container
-      position: absolute
-      top: 0
       left: 0
-      right: 0
-      bottom: 0
+      .bkg
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: white
+        opacity: 0.95
 
+      .image-container
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
 
-    img 
-      height: 100%
-      width: auto
+      img 
+        height: 100%
+        width: auto
 
-    .main-title
-      position: absolute
-      bottom: 80px
-      left: 30px 
-      right: 30px
-      font-size: 60px
-      text-align: center
+      .main-title
+        position: absolute
+        bottom: 80px
+        left: 30px 
+        right: 30px
+        font-size: 60px
+        text-align: center
 
-    .second-title
-      position: absolute
-      bottom: 30px
-      left: 30px
-      right: 30px
-      font-size: 25px
-      text-align: center
+      .second-title
+        position: absolute
+        bottom: 30px
+        left: 30px
+        right: 30px
+        font-size: 25px
+        text-align: center
+
+  .controls
+    width: 890px
+    text-align: center
+    margin: 10px 0 0 30px
 
