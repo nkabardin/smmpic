@@ -4,34 +4,38 @@ title: SMM pic generator
 
 #main
   .pic-container style="color: black;"
-    img id="image"
+    .bkg
+    .image-container
+      img id="image"
     .main-title
     .second-title
 
 
 
 #sidebar
-  h1 
-    | SMM pic generator
+  .bkg
+  .inner
+    h1 
+      | SMM pic generator
 
-  h2
-    | Image file:
+    h2
+      | Image file:
 
-  button id="fileupload-btn" 
-    | Choose
-  input type="file" name="file" id="fileupload"
+    button id="fileupload-btn" 
+      | Choose
+    input type="file" name="file" id="fileupload"
 
-  h2
-    | Main title:
+    h2
+      | Main title:
 
-  input type="text" id="main-title"
+    input type="text" id="main-title"
 
-  h2
-    | Second title:
+    h2
+      | Second title:
 
-  input type="text" id="second-title"
+    input type="text" id="second-title"
 
-  h2
-    | Font color:
+    h2
+      | Font color:
 
-  input type="text" id="font-color" value="black"
+    input type="text" id="font-color" value="black"

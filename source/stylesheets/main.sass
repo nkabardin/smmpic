@@ -5,7 +5,8 @@
   font-family: 'Tinos', serif
 
 body
-  background: white
+  background: black
+  background-image: url("/images/background.jpg")
 
 #sidebar
   position: fixed
@@ -13,8 +14,21 @@ body
   bottom: 0
   left: 0
   width: 260px
-  background: #eeffee
-  +techfont
+  .bkg
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: white
+    opacity: 0.4
+  .inner
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    +techfont
 
   h1
     font-size: 20px
@@ -24,6 +38,7 @@ body
     font-size: 16px
     font-weight: bold
     text-align: center
+    margin: 20px 0 5px 0
 
   input, button
     text-align: center
@@ -47,6 +62,23 @@ body
     position: relative
     +mainfont
     overflow: hidden
+
+    .bkg
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: white
+      opacity: 0.95
+
+    .image-container
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+
 
     img 
       height: 100%
