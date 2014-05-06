@@ -58,7 +58,7 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
-  set :http_prefix, "/smm-pic-generator"
+  set :http_prefix, ""
   activate :relative_assets
   activate :minify_css
   activate :minify_javascript
